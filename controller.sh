@@ -30,7 +30,7 @@ else
   # For any other command the chart does not need to be mounted to the container
   # Bring up a new armada container
   echo "Creating an Armada container..."
-  docker run -d --net host -p 8000:8000 --name armada -v ~/.kube/config:/armada/.kube/config -v ~/.bootkube/tls:~/.bootkube/tls -v ~/.kube/plugins/armada/examples/:/examples quay.io/attcomdev/armada:latest
+  docker run -d --net host -p 8000:8000 --name armada -v ~/.kube/config:/armada/.kube/config -v ~/.bootkube/tls:/home/ubuntu/.bootkube/tls -v ~/.kube/plugins/armada/examples/:/examples quay.io/attcomdev/armada:latest
   docker exec armada armada "$@"
 fi
 clean_container armada
