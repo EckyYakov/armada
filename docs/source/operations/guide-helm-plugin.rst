@@ -8,9 +8,9 @@ Install Plugin
 
 **Install directly from the repository**
 
- ::
- 
-    helm plugin install https://github.com/att-comdev/armada.git
+::
+
+  helm plugin install https://github.com/att-comdev/armada.git
 
 **Clone and install locally**
 
